@@ -43,8 +43,8 @@ def manual_save_im(env, path):
         env.sim,
         env.envs[0],
         # env.camera_handles2[1],
-        # env.follow_cam,
-        env.floating_cam,
+        env.follow_cam,
+        # env.floating_cam,
         gymapi.IMAGE_COLOR,
     )
     im = gymtorch.wrap_tensor(im)
@@ -164,8 +164,7 @@ def play(args):
         if RECORD_FRAMES:
             filename = os.path.join(
                 # LEGGED_GYM_ROOT_DIR,
-                # "/home/simar/Projects/isaacVL/localDev/legged_gym",
-                "/home/naoki/gt/vl/legged_gym",
+                "/home/josep-barbera/ViNL-aliengo",
                 "logs",
                 train_cfg.runner.experiment_name,
                 "exported",

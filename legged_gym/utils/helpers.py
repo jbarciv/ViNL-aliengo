@@ -210,7 +210,7 @@ def get_args():
         },
         {
             "name": "--checkpoint",
-            "type": int,
+            "type": str,
             "help": "Saved model checkpoint number. If -1: will load the last checkpoint. Overrides config file if provided.",
         },
         {

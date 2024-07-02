@@ -136,14 +136,8 @@ class AliengoObsCfgPPO(LeggedRobotCfgPPO):
         encoder_hidden_dims = [128, 64, 32]
 
     class runner(LeggedRobotCfgPPO.runner):
-        run_name = "ObsEncDM"
         alg = "ppo"
-        # run_name = ""
+        run_name = "obstacles"
         experiment_name = "obs_aliengo"
-        load_run = -1
         max_iterations = 6000  # number of policy updates
-        num_test_envs=1
-
-        resume = True
-        resume_path = "weights/rough.pt" # if you want to train
-        # resume_path = "weights/obs.pt" #if you want to eval
+        num_test_envs = 1

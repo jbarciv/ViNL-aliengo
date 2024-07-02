@@ -140,18 +140,13 @@ class AliengoLbcCfgPPO(LeggedRobotCfgPPO):
 
     class runner(LeggedRobotCfgPPO.runner):
         alg = "lbc"
-        run_name = "debug"
-        # run_name = ""
+        run_name = "lbc"
         experiment_name = "lbc_aliengo"
-        load_run = -1
         max_iterations = 10000  # number of policy updates
         num_test_envs = 1
 
-        resume = True #True for eval, false for train
-
-        resume_path = "weights/lbc.pt"
-
-        teacher_policy = "weights/obs.pt"
+        # resume_path = "weights/lbc.pt"
+        # teacher_policy = "weights/obs.pt"
 
     class lbc(LeggedRobotCfgPPO.lbc):
         batch_size = 10

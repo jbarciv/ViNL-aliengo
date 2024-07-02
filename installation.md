@@ -5,6 +5,7 @@ Git clone the [ViNL GitHub repository](https://github.com/SimarKareer/ViNL):
 ```
 git clone --recurse-submodules git@github.com:SimarKareer/ViNL.git
 ```
+... but I prefer to fork their repo in my Github profile and git clone the forked repo so all changes will be saved.
 
 ## Miniconda
 Install `miniconda` from this link: https://docs.anaconda.com/miniconda/
@@ -73,7 +74,7 @@ Also, some minor changes will necesary:
     ``` 
 -->
 
-7) In the `legged_gym/utils/logger.py` file there is a function called `plot()` which could be really helpful but... utilices a lot of memory and makes the training execution do not work properly. We recomend not using it when launching `my_train.sh`. But could be helpful when launching indiviual training stages.
+7) In the `legged_gym/utils/logger.py` file there is a function called `plot()` which could be really helpful but... utilices a lot of memory and makes the training execution do not work properly. **We recomend not using it when launching `my_train.sh`**. But could be helpful when launching indiviual training stages.
 
 ## Troubleshooting
 1) If you found a message like this:
